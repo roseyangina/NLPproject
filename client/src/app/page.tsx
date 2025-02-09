@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function Home() {
   const [inputString, setInputString] = useState("");
   const [keywords, setKeywords] = useState<string[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   interface KeywordsResponse {
     keywords: string[];
